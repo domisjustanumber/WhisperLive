@@ -535,6 +535,9 @@ class ServeClientBase(object):
             segments = self.transcript.copy()
         if last_segment is not None:
             segments = segments + [last_segment]
+
+            print("Segments: ")
+            println(segments)
         return segments
 
     def get_audio_chunk_duration(self, input_bytes):
